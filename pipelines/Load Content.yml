@@ -1,0 +1,5 @@
+version: pipelines/v0.1
+name: Load Content
+timeout: 0
+data_components:
+- gdrive
