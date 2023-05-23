@@ -2,6 +2,10 @@ version: workspaces/v0.1
 name: RCA Context
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
+  HOME_PAGE: explore
+  APP_MENU_ITEMS: '[{"name": "explore", "faIcon": "users", "label": "Questions"}]'
+  TOOLBAR_SEARCH_ALT_TEXT: Search all questions...
+  EXPLORE_PAGE_TITLE: Questions
 dataset_paths:
 - analyze/datasets
 - .meltano/analyze/datasets
