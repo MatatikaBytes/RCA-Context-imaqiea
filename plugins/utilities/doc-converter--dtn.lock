@@ -1,0 +1,27 @@
+{
+  "plugin_type": "utilities",
+  "name": "doc-converter",
+  "namespace": "doc-converter",
+  "variant": "dtn",
+  "label": "DTN Doc Converter",
+  "logo_url": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2148841777/settings_images/S2gTnYqbRZybj3cJCRT1_DTN_logo.png",
+  "pip_url": "git+https://github.com/Matatika/utility-dtn-doc-converter.git",
+  "commands": {
+    "run": {
+      "args": "$DOC_CONVERTER_FILE_PATH",
+      "description": "Convert files in path"
+    }
+  },
+  "settings": [
+    {
+      "name": "file_path",
+      "env": "DOC_CONVERTER_FILE_PATH",
+      "kind": "string",
+      "label": "Path to File or Folder",
+      "protected": false,
+      "required": "false"
+    }
+  ],
+  "id": "9f150798-e2cf-42fe-b3aa-bfaaacf62f96",
+  "matatika_hidden": false
+}

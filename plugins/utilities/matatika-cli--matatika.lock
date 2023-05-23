@@ -1,0 +1,12 @@
+{
+  "plugin_type": "utilities",
+  "name": "matatika-cli",
+  "namespace": "matatika-cli",
+  "executable": "matatika",
+  "variant": "matatika",
+  "label": "Matatika CLI",
+  "logo_url": "/assets/images/datasource/tap-matatika-sit.svg",
+  "pip_url": "matatika==1.13.0",
+  "id": "a235c818-2482-4385-b988-aa72a8b6120f",
+  "matatika_hidden": false
+}

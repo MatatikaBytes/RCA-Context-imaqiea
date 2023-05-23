@@ -3,3 +3,23 @@ name: Load Content
 timeout: 0
 data_components:
 - gdrive
+- doc-converter
+- matatika-cli
+script: |-
+  meltano install utility gdrive
+  meltano install utility doc-converter
+  meltano install utility matatika-cli
+
+  meltano run gdrive:run doc-converter:run
+
+  set -e
+  shopt -s nullglob
+  shopt -s nocaseglob
+
+  export MATATIKA_CONTEXT_HOME=./.matatika
+  datasets_dir=output
+  cd $datasets_dir
+  for dataset in *.{yaml,yml} 
+  do
+    meltano invoke matatika-cli publish $dataset
+  done

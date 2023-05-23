@@ -18,3 +18,13 @@ plugins:
   - name: gdrive
     variant: matatika
     pip_url: git+https://github.com/Matatika/utility-gdrive.git@v0.2.0
+    config:
+      output_path: output
+  - name: doc-converter
+    variant: dtn
+    pip_url: git+https://github.com/Matatika/utility-dtn-doc-converter.git
+    config:
+      file_path: output
+  - name: matatika-cli
+    variant: matatika
+    pip_url: matatika==1.13.0
