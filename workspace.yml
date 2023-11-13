@@ -2,8 +2,26 @@ version: workspaces/v0.1
 name: RCA Context
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
-  HOME_PAGE: explore
-  APP_MENU_ITEMS: '[{"name": "explore", "faIcon": "users", "label": "Questions"}]'
+  HOME_PAGE: dashboard
+  DASHBOARD_CONTENT: |-
+    <div style={{'display':'flex'}}>
+      <div>## Elemenatary</div>
+      <div>`Last 7 days`</div>
+    </div>
+    <div style={{'display':'flex'}}>
+      <div>
+        <DatasetChart alias="mermaid" />
+      </div>
+      <div>
+        <DatasetChart alias="mermaid-erd" />
+      </div>
+    </div>
+  APP_MENU_ITEMS: |-
+    [
+      {"name": "explore", "faIcon": "users", "label": "Questions"},
+      {"name": "dashboard", "faIcon": "users", "label": "Dashboard"}
+    ]
+  DASHBOARD_PAGE_TITLE: Dashboard
   TOOLBAR_SEARCH_ALT_TEXT: Search all questions...
   EXPLORE_PAGE_TITLE: Questions
   FEATURE_QUESTIONS: true
