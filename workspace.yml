@@ -7,7 +7,7 @@ app_properties:
   TOOLBAR_SEARCH_ALT_TEXT: Search all questions...
   EXPLORE_PAGE_TITLE: Questions
   FEATURE_QUESTIONS: true
-  # INVITATION_EMAIL_RESULT_URL: https://chromewebstore.google.com/detail/bnclopgmhohmfghlkmbmedlgljkplaig/preview?hl=en-GB
+  INVITATION_EMAIL_RESULT_URL: https://chromewebstore.google.com/detail/bnclopgmhohmfghlkmbmedlgljkplaig/preview?hl=en-GB
   INVITATION_EMAIL_SUBJECT: Install the Matatika Chrome extension
   INVITATION_EMAIL_TEMPLATE: |-
     <!DOCTYPE html>
