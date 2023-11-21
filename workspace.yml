@@ -18,13 +18,16 @@ app_properties:
         invited you to install the Matatika Chrome extension.</h2>
 
       <p>
-        <a th:href="${passwordResetTicketUrl}" target="_blank">Go to Chrome Web Store</a>
+        <a th:href="${passwordResetTicketUrl}" target="_blank">Set a password</a>
       </p>
 
       <br />
       <hr style="border: 2px solid #EAEEF3; border-bottom: 0;" />
 
-    <img alt="Add to Chrome" src="https://www.matatika.com/wp-content/uploads/2023/11/add-to-chrome.png"></img>
+      <div style="text-align: center;">
+        <img style="width: 45%;" alt="Set a password" src="https://www.matatika.com/wp-content/uploads/2023/11/set-a-password.png" />
+        <img style="width: 45%;" alt="Add to Chrome" src="https://www.matatika.com/wp-content/uploads/2023/11/add-to-chrome.png" />
+      </div>
     </body>
     </html>
 dataset_paths:
